@@ -29,11 +29,11 @@ body { font-family: 'Nanum Gothic', sans-serif;}
 		<input type="text" class="form-control" name="id" id="id" placeholder="아이디없음" />
 	</div>
 	<div class="form-group">
-		<label for="title">title</label>
+		<label for="title">TITLE</label>
 		<input type="text" class="form-control" name="title" id="title" placeholder="제목없음" />
 	</div>
 	<div class="form-group">
-		<label for="contents">contents</label>
+		<label for="contents">CONTENTS</label>
 		<input type="text" class="form-control" name="contents" id="contents" placeholder="내용없음" />
 	</div>
 	<button type="submit" class="btn btn-info btn-sm active">입력</button>

@@ -30,7 +30,7 @@ public class HomeController {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return "bbs/not_bbs";
+		return "/bbs/not_bbs";
 	}
 	
 	@RequestMapping("/ndetail.bit")
@@ -44,7 +44,7 @@ public class HomeController {
 			e.printStackTrace();
 		}
 		
-		return "bbs/ndetail";
+		return "/bbs/ndetail";
 	}
 	
 	@RequestMapping("/nedit.bit")
@@ -58,12 +58,12 @@ public class HomeController {
 			e.printStackTrace();
 		}
 		
-		return "bbs/nedit";
+		return "/bbs/nedit";
 	}
 	
 	@RequestMapping("nadd.bit")
 	public String add() {
-		return "bbs/nadd";
+		return "/bbs/nadd";
 	}
 	
 	@RequestMapping("insert.bit")
@@ -73,6 +73,7 @@ public class HomeController {
 		bean.setBbsNum(Integer.parseInt(req.getParameter("num")));
 		bean.setMemId(req.getParameter("id"));
 		bean.setTitle(req.getParameter("title"));
+		bean.setContents(req.getParameter("contents"));
 		try {
 			dao.insertOne(bean);
 		} catch (SQLException e) {

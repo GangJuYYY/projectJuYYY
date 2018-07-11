@@ -41,8 +41,8 @@ body { font-family: 'Nanum Gothic', sans-serif;}
 		</c:forEach>
 	</tbody>
 </table>
+ </div>
 <a href="/shop01/nadd.bit/" role="btn" class="btn btn-info btn-sm active">입력</a>
-</div>
 <%@ include file="../template/footer.jsp" %>
 </body>
 </html>

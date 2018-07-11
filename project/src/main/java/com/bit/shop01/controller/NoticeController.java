@@ -26,12 +26,12 @@ public class NoticeController {
 	@RequestMapping("/ndetail")
 	public String detail(int idx,Model model) throws SQLException {
 		model.addAttribute("bean", bbsDao.selectOne(idx));
-		return "bbs2/ndetail";
+		return "/bbs2/ndetail";
 	}
 	
 	@RequestMapping("/nadd")
 	public String add() {
-		return "bbs2/nadd";
+		return "/bbs2/nadd";
 	}
 	
 	@RequestMapping(value="/insert", method=RequestMethod.POST)
@@ -44,7 +44,7 @@ public class NoticeController {
 	@RequestMapping("/nedit")
 	public String editFrom(int idx,Model model) throws SQLException {
 		model.addAttribute("bean", bbsDao.selectOne(idx));
-		return "bbs2/nedit";
+		return "/bbs2/nedit";
 	}
 	
 	@RequestMapping(value="/update", method=RequestMethod.POST)
@@ -60,4 +60,5 @@ public class NoticeController {
 		bbsDao.deleteOne(idx);
 		return "redirect:not_bbs";
 	}
+		
 }
