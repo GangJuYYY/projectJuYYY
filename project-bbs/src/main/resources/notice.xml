@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="notice">
+  
+  	<select id="selectAll" resultType="dto">
+  		SELECT * FROM SHOP_BBS ORDER BY BBSNUM
+  	</select>
+  	
+  	<select id="total" resultType="int">
+  		SELECT COUNT(*) FROM SHOP_BBS
+  	</select>
+  	
+  	<insert id="insertOne" parameterType="dto">
+  		INSERT INTO SHOP_BBS VALUES (#{bbsNum},
+  		<choose>
+		    <when test='memId==null or memId==""'>
+		      '아이디없음'
+		    </when>
+		    <otherwise>
+		      #{memId}
+		    </otherwise>
+  		</choose>
+  		,#{title},#{contents},SYSDATE)
+
+  	</insert>
+  	
+  	<delete id="deleteOne" parameterType="int">
+  		DELETE FROM SHOP_BBS WHERE BBSNUM=#{val}
+  	</delete>
+  	
+  	<update id="updateOne" parameterType="dto">
+  		UPDATE SHOP_BBS SET MEMID=#{memId},TITLE=#{title},CONTENTS=#{contents} WHERE BBSNUM=#{bbsNum}
+  	</update>
+  
+  </mapper>
