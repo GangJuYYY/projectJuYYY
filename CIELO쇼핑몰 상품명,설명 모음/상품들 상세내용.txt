@@ -1,0 +1,63 @@
+bottom : bot01~10
+dress : dre01~10
+outer : out01~10
+sale : ssho01~02, sacc03~05, sdre06, sbot07, stop08~09, sout10
+shoes&acc : sho01~05 / acc06~10
+top : top01~10
+
+<bottom>
+
+모든 사이즈: S,M,L
+모든 컬러: 레드(red),브라운(brown),옐로우(yellow),블루(blue),그린(green),
+           핑크(pink),화이트(white),블랙(black)
+
+<dress>
+
+모든 사이즈: 44,55,66
+모든 컬러: 블루(blue),레드(red),그린(green),화이트(white),블랙(black),
+           베이지(beige),오렌지(orange)
+
+
+
+<outer>
+모든 사이즈: S,M,L
+모든 컬러: 화이트(white),블랙(black),블루(blue),그레이(gray),레드(red)
+
+
+
+
+<sale>
+모든 사이즈: (1) 225~250 : 컬러- 블랙,옐로우,화이트,블루
+             
+             (2) FREE : 컬러- 베이지,실버
+
+             (3) 44,55,66 : 컬러- 레드
+
+             (4) S,M,L : 컬러- 레드(red),베이지(beige),그린(green),블랙(black),
+                               옐로우(yellow),화이트(white),블루(blue),그레이(gray)
+              
+
+
+
+<shoes&acc>
+
+      -<shoes>
+
+       모든 사이즈: 225~250
+       모든 컬러: 베이지(beige),블랙(black),화이트(white),브라운(brown)
+
+
+      -<acc>
+
+       모든 사이즈: FREE
+       모든 컬러: 실버(silver),블루(blue),베이지(beige),블랙(black),브라운(brown)
+
+
+
+<top>
+
+모든 사이즈: S,M,L
+모든 컬러: 그린(green),퍼플(purple),화이트(white),블루(blue),
+           핑크(pink),레드(red),브라운(brown),그레이(gray)
+
+
